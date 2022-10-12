@@ -1,5 +1,13 @@
 from os import system
+
 system('cls')
-nev:str=str(input("Adja meg a nevét!"))
-szuletesiEv:int=int(input("Adja meg a születési évét!"))
+
+print("Adja meg a nevét!", end="")
+
+nev:str=str(input())
+
+print("Adja meg a születési évét!", end="")
+
+szuletesiEv:int=int(input())
+
 print(f"{nev}, ön {szuletesiEv} született")
