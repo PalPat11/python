@@ -1,5 +1,14 @@
 from os import system
+
 system('cls')
-nev:str=str(input("Adja meg a nevét!"))
-magassag:float=float(input("Adja meg a magasságát(m)!"))
+
+print("Adja meg a nevét!", end="")
+
+nev:str=str(input())
+
+print("Adja meg a magasságát(m)!", end="")
+
+
+magassag:float=float(input())
+
 print(f"{nev}, ön magassága {magassag}m")

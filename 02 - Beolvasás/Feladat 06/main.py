@@ -1,10 +1,21 @@
 from os import system
+
 system('cls')
 
-kedvencFilm:str=str(input("Írja be a kedvenc filmjének a címét! "))
+print("Írja be a kedvenc filmjének a címét!", end="")
 
-rendezoNeve:str=str(input("Írja be ennek a filmenk a rendezőjét! "))
+kedvencFilm:str=str(input())
 
-foszereplo:str=str(input("irja be a főszereplő nevét! "))
+print("Megjelenési év", end="")
 
-print(f"")
+megjelenesiEv:int=int(input())
+
+print("Megjelenési év", end="")
+
+rendezoNeve:str=str(input())
+
+print("főszereplő neve", end="")
+
+foszereplo:str=str(input())
+
+print(f"{megjelenesiEv}-ban {rendezoNeve} rendezésében megjelent a/az {kedvencFilm} című film {foszereplo} főszereplésével.")

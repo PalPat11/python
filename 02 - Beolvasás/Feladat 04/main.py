@@ -4,8 +4,12 @@ system('cls')
 
 system('color a')
 
-nev:str=str(input("Adja meg a nevét!"))
+print("Adja meg a nevét!", end="")
 
-bill:str=str(input("Nyomjon le egy billentyűt!"))
+nev:str=str(input())
 
-print(f"Ön, {nev} a/az {bill} billentyűt nyomta le")
+print("Nyomjon le egy billentyűt!", end="")
+
+billentyu:str=str(input())
+
+print(f"Ön, {nev} a/az {billentyu} billentyűt nyomta le")
