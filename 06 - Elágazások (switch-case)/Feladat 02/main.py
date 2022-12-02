@@ -2,54 +2,31 @@ from os import system
 system('cls')
 
 print("Adja meg a hónapot amiben született")
-honap=str(input())
+honap=str(input().lower().strip())
 
 match honap:
-    case "Január":
+
+    case "január" | "jan":
         print("Ön az 1. hónapban született")
-    case "Ferbuár":
+    case "február" | "feb":
         print("Ön a 2. hónapban született")
-    case "Március":
+    case "március" | "mar":
         print("Ön a 3. hónapban született")
-    case "Április":
+    case "április" | "apr":
         print("Ön a 4. hónapban született")
-    case "Május":
+    case "május" | "maj":
         print("Ön az 5. hónapban született")
-    case "Június":
+    case "június" | "jun":
         print("Ön a 6. hónapban születetett")
-    case "Július":
+    case "július" | "jul":
         print("Ön a 7. hónapban született")
-    case "Augusztus":
+    case "augusztus" | "aug":
         print("Ön a 8. hónapban született")
-    case "Szeptember":
+    case "szeptember" | "sep":
         print("Ön a 9. hónapban született")
-    case "Október":
+    case "október" | "okt":
         print("Ön a 10. hóapban született")
-    case "November":
+    case "november" | "nov":
         print("Ön a 11. hónapban született")
-    case "December":
-        print("Ön a 12. hónapban született")
-    case "január":
-        print("Ön az 1. hónapban született")
-    case "ferbuár":
-        print("Ön a 2. hónapban született")
-    case "március":
-        print("Ön a 3. hónapban született")
-    case "április":
-        print("Ön a 4. hónapban született")
-    case "május":
-        print("Ön az 5. hónapban született")
-    case "június":
-        print("Ön a 6. hónapban születetett")
-    case "július":
-        print("Ön a 7. hónapban született")
-    case "augusztus":
-        print("Ön a 8. hónapban született")
-    case "szeptember":
-        print("Ön a 9. hónapban született")
-    case "október":
-        print("Ön a 10. hóapban született")
-    case "november":
-        print("Ön a 11. hónapban született")
-    case "december":
+    case "december" | "dec":
         print("Ön a 12. hónapban született")
