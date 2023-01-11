@@ -7,14 +7,14 @@ veg=int(input())
 
 osszeg=0
 
+for i in range(kez, veg):
+    if i%2==0:
+        osszeg=osszeg+i
+print(osszeg)
+
 szorzat=1
 
-for i in range(kez,veg):
-    if i%2==0:
-        i=i+2
-        osszeg=osszeg+i
-        print(osszeg)
-    elif i%2!=0:
-        i=i+2
-        szorzat=osszeg*i
-        print(szorzat)
+for i in range(kez, veg):
+    if i%2!=0:
+        szorzat=szorzat*i
+print(szorzat)

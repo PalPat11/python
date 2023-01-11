@@ -8,7 +8,12 @@ veg=int(input())
 osszeg=0
 
 for i in range(kezdo,veg):
-    i+=1
     osszeg=osszeg+i
 
-    print(osszeg)
+print(osszeg)
+
+szorzat=1
+
+for i in range(kezdo, veg):
+    szorzat=szorzat*i
+print(szorzat)
