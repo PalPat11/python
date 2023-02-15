@@ -21,8 +21,7 @@ while(hatarertek==None or intHatarertek<100):
     isNumber=atalakitHatarertek.isnumeric()
     if(isNumber):
         intHatarertek=int(hatarertek)
-    else:
-        continue
+
 
 while(bekert==None or osszeg<intHatarertek):
     print("Kezdje el összeadni a számokat")
@@ -31,9 +30,7 @@ while(bekert==None or osszeg<intHatarertek):
     isNumber=atalakitBekert.isnumeric()
     if(isNumber):
         intBekert=int(bekert)
-    else:
-        continue
-    szamlalo+=1
-    osszeg=osszeg+intBekert
+        szamlalo+=1
+        osszeg=osszeg+intBekert
 print(szamlalo)
 print(osszeg)

@@ -16,8 +16,7 @@ while (kisebb==None):
     isNumber=atalakitottKisebb.isnumeric()
     if(isNumber):
         intKisebb=int(kisebb)
-    else:
-        continue
+
 
 while (nagyobb==None or intNagyobb<=intKisebb):
     print("Adjon meg egycghghg számot")
@@ -26,9 +25,7 @@ while (nagyobb==None or intNagyobb<=intKisebb):
     isNumber=atalakitottNagyobb.isnumeric()
     if(isNumber):
         intNagyobb=int(nagyobb)
-    else:
-        continue
 
-if intNagyobb>intKisebb:
-    for i in reversed(range(intKisebb, intNagyobb)):
-        print(i)
+
+for i in range(intNagyobb, intKisebb, -1):
+    print(i)

@@ -6,26 +6,17 @@ intSzam:int=None
 numericE:bool=None
 atalakitottString:int=None
 osszeg:int=0
-print("Adjon meg szmot(")
-szam=str(input())
-
-
-    
+probszam:int=0
 
 while (szam==None or osszeg<100):
-    
+    print("Adjon meg szmot(")
+    szam=str(input())
     atalakitottString=szam.replace(".", "").replace("-", "")
     numericE=atalakitottString.isnumeric()
     if(numericE):
         intSzam=int(szam)
-    else:
-        continue
-    osszeg=intSzam
-    probszam=1
-    probszam+=1
-    osszeg=osszeg+intSzam
-    print("Adjon meg még  számokat")
-    szam=str(input())
+        probszam+=1
+        osszeg=osszeg+intSzam
 
 
 print(f"{probszam} próbálkozásból sikerült elérni" )
