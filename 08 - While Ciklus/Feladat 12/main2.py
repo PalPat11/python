@@ -16,8 +16,9 @@ while(szam<1):
     if(isNumber):
         szam=int(strSzam)
 
-while(szam<100000):
+while(osszeg<100000):
     szamlalo+=1
-    szam=szam*1.02
+    osszeg=osszeg+(szam*0.02)
+
 print(f"{szamlalo} hónap alatt éri el")
-print(f"Az összeg:{szam}")
+print(f"Az összeg:{osszeg}")

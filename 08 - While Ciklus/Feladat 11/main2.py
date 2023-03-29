@@ -17,8 +17,7 @@ while(paros==None or intParos%2!=0):
     isNumber=atalakitottparos.isnumeric()
     if(isNumber):
         intParos=int(paros)
-    else:
-        continue
+
 
 while(paratlan==None or intParatlan%2==0 or intParatlan<intParos):
     print("Adjon meg egy páratlan számot")
@@ -27,8 +26,7 @@ while(paratlan==None or intParatlan%2==0 or intParatlan<intParos):
     isNumber=atalakitottparatlan.isnumeric()
     if(isNumber):
         intParatlan=int(paratlan)
-    else:
-        continue
+
 
 randomszam:int=randint(intParos, intParatlan)
 
