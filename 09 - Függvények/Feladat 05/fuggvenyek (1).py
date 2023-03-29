@@ -1,15 +1,14 @@
 from os import system
 
-def meghatarozas(a:str, b:int)->int:
-    szamlalo:int=0
-    temp:bool=None
-    for i in a:
-        if(a.count(i)>0):
-            temp=True
-        if(temp==True):
-            szamlalo+=1
+def countSameLetter(text1:str, text2:str)->int:
+    sameLetter:int=None
+    intersection:str=""
+    for i in text1:
+        if(text2.fint(1)>0 and intersection.find(i)==-1):
+            intersection=intersection+i
+    sameLetter=len(intersection)
 
-    return szamlalo
+    return sameLetter
 
 def szovegbekeres()->str:
     szoveg:str=None
