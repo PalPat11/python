@@ -1,29 +1,33 @@
-from os import system
 from random import randint
-
-def randomSzamGeneralas(a:int, b:int)->int:
-    szam:int=None
+from os import system
+def ketRandomSzam(a:int, b:int)->int:
     szam=randint(a, b)
     return szam
 
-def randomSzamTipp(a:int, b:int)->int:
+def tipp()->int:
+    szamlalo:int=0
     tipp:str=None
-    atalakitotttipp:str=None
+    atalakitott:str=None
     intTipp:int=None
     isNum:bool=None
-    while(intTipp==None or intTipp>b or intTipp<a):
-        print(f"Tippeljen {a} és {b} között")
+    while(intTipp==None or intTipp>50 or intTipp<0):
+        print("Tippeljen!")
         tipp=input()
-        atalakitotttipp=tipp.replace(".", "").replace("-", "")
-        isNum=atalakitotttipp.isnumeric()
+        atalakitott=tipp.replace(".", "").replace("-", "")
+        isNum=atalakitott.isnumeric()
         if(isNum):
             intTipp=int(tipp)
     return intTipp
 
-def checking(tipp:int, randomszam:int, a:int, b:int)->int:
-    szamlalo:int=1
-    while(tipp!=randomszam):
-        tipp=randomSzamTipp(a, b)
-        szamlalo+=1
-    return szamlalo
-
+def tippHelyesseg(a:int, randomszam:int)->None:
+    szamlallo:int=1
+    while(a!=randomszam):
+        if(a>randomszam):
+            print("A random szám kisebb")
+        else:
+            print("A random szám nagyobb")
+        a=tipp()
+        szamlallo+=1
+    if(a==randomszam):
+        print("Elatlálta")
+        print(f"{szamlallo} alkalommal tippelt")
