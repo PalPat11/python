@@ -28,4 +28,10 @@ def studentsAboveAvarage(students:List[Student], classAvarage:float)->List[Stude
 
     return aboveAvarage
 
-
+def isAnyExcellentStudent(students:List[Student])->bool:
+    exists:bool=False
+    for student in students:
+        if(student.avarage==5):
+            exists=True
+            break
+    return exists

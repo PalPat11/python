@@ -20,3 +20,9 @@ print(f"A legjibb tanuló: {bestStudent}")
 
 aboveAvarage:List[Student]=studentsAboveAvarage(students, classAvarage)
 writeStudentsInFile(aboveAvarage, "atlagfelett.txt")
+
+exists:bool=isAnyExcellentStudent(students)
+if(exists):
+    print(f"\n\nVan kitűnő tanuló!\n\n")
+else:
+    print(f"\n\nNincs kitűnő tanuló!\n\n")
